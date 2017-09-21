@@ -1,0 +1,180 @@
+    .title {
+        background-color: lightskyblue;
+        float: left;
+        color: white;
+        margin: -30px 10% 0px 10%;
+        padding: 40px 40px 20px 40px;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        width: 100%;
+    }
+    
+    h1 {
+        font-family: serif;
+    }
+    
+    header ul li {
+        display: inline;
+        text-decoration: none;
+        float: left;
+        margin: 35px 8px 2px;
+        padding-right: 15px;
+        border-right: 1px solid grey;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    header ul {
+        margin-left: 50%;
+    }
+    
+    header {
+        width: 100%;
+        height: 65px;
+        z-index: 2;
+    }
+    
+    #container {
+        background-image: url("../assets/concrete-texture.png");
+        width: 100%;
+        height: 800px;
+        border-top: 1px solid black;
+    }
+    
+    #bio {
+        background-color: white;
+        border-radius: 20px;
+        margin: 5% 3% 5% 5%;
+        width: 50%;
+        clear: both;
+        float: left;
+    }
+    
+    #bio img {
+        height: 200px;
+        width: 200px;
+        padding-left: 3.2%;
+        float: left;
+        position: relative;
+    }
+    
+    #bio p {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+    }
+    
+    #bio h1,
+    .aside h1 {
+        color: #4fa9a4;
+        padding-left: 30px;
+        padding: 0px -50px;
+    }
+    
+    hr {
+        width: 90%;
+        margin: -15px 5% 10% 2%;
+    }
+    
+    .aside {
+        margin: 5% 5% 5px 0%;
+        background-color: white;
+        float: left;
+        width: 30%;
+        border-radius: 30px;
+    }
+    
+    .aside div ul li img {
+        width: 80px;
+        height: 80px;
+        padding: 5%;
+    }
+    
+    .aside div ul li {
+        display: inline-block;
+        margin-right: 2.5%;
+    }
+    
+    .aside div ul li:hover {
+        animation: createBox;
+    }
+    
+    .footer {
+        height: 60px;
+        margin: -40px;
+        background-color: #4fa9a4;
+    }
+    
+    @keyframes createBox {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    /* *?/////////////////////////////////////////////////
+Gallery
+////////////////////////////////////////////////// */
+    
+    h2 {
+        color: green;
+    }
+    
+    #bio .piece {
+        float: left;
+        width: 35%;
+        max-width: 100%;
+        height: 200px;
+        margin: 1.5% 6% 3% 6%;
+        border: 1px solid black;
+        color: white;
+        text-align: center;
+    }
+    
+    #bio .piece p {
+        margin-top: 50%;
+        padding: 20px 0px;
+        width: 100%;
+        background-color: #4fa9a4;
+    }
+    /*////////////////////////////////////////////
+    Contact Form
+    /////////////////////////////////////////////*/
+    
+    fieldset {
+        border: none;
+    }
+    
+    #contact_form {
+        width: 90%;
+        margin: -50px 5% 6% 5%;
+    }
+    
+    .floatlabel {
+        height: 50px;
+        margin: 1.5% 0px;
+        ;
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 8px;
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        padding: 10px 30px 10px 20px;
+    }
+    
+    #submit {
+        padding: 10px 8px;
+        background-color: lightseagreen;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+    }
