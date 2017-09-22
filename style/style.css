@@ -6,6 +6,10 @@
         padding: 40px 40px 20px 40px;
     }
     
+    #main_shot {
+        float: left;
+    }
+    
     body {
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
@@ -54,20 +58,24 @@
         width: 50%;
         clear: both;
         float: left;
+        box-shadow: 13px 10px 40px 3px rgba(125, 125, 125, 1);
     }
     
     #bio img {
         height: 200px;
         width: 200px;
-        padding-left: 3.2%;
+        padding: 5%;
         float: left;
         position: relative;
     }
     
-    #bio p {
-        display: inline-block;
-        vertical-align: top;
-        padding: 10px;
+    #bio div {
+        widith: 90%;
+        margin: 10% 5%;
+    }
+    
+    #bio span {
+        padding: 20%;
     }
     
     #bio h1,
@@ -88,6 +96,7 @@
         float: left;
         width: 30%;
         border-radius: 30px;
+        box-shadow: 13px 10px 40px 3px rgba(125, 125, 125, 1);
     }
     
     .aside div ul li img {
