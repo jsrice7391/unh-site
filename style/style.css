@@ -10,6 +10,20 @@
         float: left;
     }
     
+    #burger {
+        float: right;
+        width: 80px;
+        margin-right: 10%;
+    }
+    
+    #burger div {
+        height: 10px;
+        width: 80px;
+        background-color: grey;
+        margin: 2.5%;
+        float: right;
+    }
+    
     body {
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
@@ -29,13 +43,19 @@
         border-right: 1px solid grey;
     }
     
-    header ul li a {
-        text-decoration: none;
-        color: black;
+    header ul .links {
+        margin-left: 80%;
     }
     
-    header ul {
-        margin-left: 50%;
+    .links li {
+        display: block;
+        text-align: center;
+    }
+    
+    .links li a {
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
     }
     
     header {
@@ -111,6 +131,7 @@
     }
     
     .footer {
+        clear: both;
         height: 60px;
         margin: -40px;
         background-color: #4fa9a4;
@@ -172,4 +193,83 @@ Gallery
         color: white;
         text-decoration: none;
         border-radius: 10px;
+    }
+    
+    .cross {
+        background: none;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 7px 15px 0px 15px;
+        color: #999;
+        border: 0;
+        font-size: 3em;
+        line-height: 65px;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        z-index: 10000000000000;
+    }
+    /*////////////////////////////////////////////
+    Responsive  
+    /////////////////////////////////////////////*/
+    
+    @media screen and (max-width: 640px) {
+        #bio {
+            width: 95%;
+            margin: 5% 2.5%;
+        }
+        #bio img {
+            width: 90%;
+            margin: -10% 2.5% 5% 2.5%;
+        }
+        #burger {
+            display: inline;
+        }
+        .links {
+            display: none;
+            width: 100%;
+            height: 40px;
+            clear: both;
+        }
+        .aside {
+            width: 95%;
+            margin: 5% 2.5%;
+        }
+        footer {
+            clear: both;
+        }
+        #bio div .piece {
+            width: 95%;
+            margin: 5% 2.5%:
+        }
+    }
+    
+    @media screen and (max-width: 446px) {
+        .title {
+            width: 100%;
+            padding-top: 20%;
+            text-align: center;
+            margin: -10% -10%;
+        }
+        #contact_form {
+            margin-top: 10%;
+        }
+        #burger {
+            clear: both;
+            margin: 10% 40%;
+        }
+        .links {
+            text-align: center;
+            clear: both;
+            width: 100%;
+            float: left;
+            margin-top: 10%;
+        }
+        .cross {
+            clear: both;
+        }
+        .piece {
+            width: 800px;
+        }
     }
